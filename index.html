@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes of the Storm Heroes Drag App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Heroes of the Storm Heroes</h1>
+    <div class="container">
+        <div class="hero-list" id="heroList">
+            <!-- Hero portraits will be loaded here via JS -->
+        </div>
+        <div class="display-area" id="displayArea" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p>Drag heroes here</p>
+        </div>
+    </div>
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="heroName"></h2>
+            <div id="heroDetails"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
