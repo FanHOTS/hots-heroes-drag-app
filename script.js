@@ -1,5 +1,3 @@
-// List of all heroes with JSON URLs (lowercase for file names) and portrait URLs.
-// Portraits now use direct URLs from the heroes-talents GitHub repo for reliability.
 const heroes = [
     { name: 'Abathur', jsonFile: 'abathur', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/abathur_hero_portrait.png' },
     { name: 'Alarak', jsonFile: 'alarak', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/alarak_hero_portrait.png' },
@@ -93,7 +91,7 @@ const heroes = [
     { name: 'Zul\'jin', jsonFile: 'zuljin', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/zuljin_hero_portrait.png' }
 ];
 
-// Load heroes into the list
+// Load heroes into the list with error handling for images
 const heroList = document.getElementById('heroList');
 heroes.forEach(hero => {
     const img = document.createElement('img');
@@ -104,6 +102,7 @@ heroes.forEach(hero => {
     img.ondragstart = drag;
     img.dataset.name = hero.name;
     img.dataset.jsonFile = hero.jsonFile;
+    img.onerror = () => { img.src = 'https://via.placeholder.com/80'; console.log(`Image failed to load for ${hero.name}`); }; // Fallback to placeholder if image fails
     heroList.appendChild(img);
 });
 
