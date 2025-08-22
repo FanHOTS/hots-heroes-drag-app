@@ -1,95 +1,96 @@
 // List of all heroes with JSON URLs (lowercase for file names) and portrait URLs.
+// Portraits now use direct URLs from the heroes-talents GitHub repo for reliability.
 const heroes = [
-    { name: 'Abathur', jsonFile: 'abathur', portrait: 'https://static.wikia.nocookie.net/allstars_gamepedia/images/2/2b/Abathur_Hero_Portrait.png/revision/latest' },
-    { name: 'Alarak', jsonFile: 'alarak', portrait: 'https://static.wikia.nocookie.net/allstars_gamepedia/images/8/84/Alarak_Hero_Portrait.png/revision/latest' },
-    { name: 'Alexstrasza', jsonFile: 'alexstrasza', portrait: 'https://static.wikia.nocookie.net/allstars_gamepedia/images/2/2f/Alexstrasza_Hero_Portrait.png/revision/latest' },
-    { name: 'Ana', jsonFile: 'ana', portrait: 'https://static.wikia.nocookie.net/allstars_gamepedia/images/6/66/Ana_Hero_Portrait.png/revision/latest' },
-    { name: 'Anduin', jsonFile: 'anduin', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Anub\'arak', jsonFile: 'anubarak', portrait: 'https://static.wikia.nocookie.net/allstars_gamepedia/images/3/3e/Anub%27arak_Hero_Portrait.png/revision/latest' },
-    { name: 'Artanis', jsonFile: 'artanis', portrait: 'https://static.wikia.nocookie.net/allstars_gamepedia/images/9/92/Artanis_Hero_Portrait.png/revision/latest' },
-    { name: 'Arthas', jsonFile: 'arthas', portrait: 'https://static.wikia.nocookie.net/allstars_gamepedia/images/2/24/Arthas_Hero_Portrait.png/revision/latest' },
-    { name: 'Auriel', jsonFile: 'auriel', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Azmodan', jsonFile: 'azmodan', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Blaze', jsonFile: 'blaze', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Brightwing', jsonFile: 'brightwing', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'The Butcher', jsonFile: 'butcher', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Cassia', jsonFile: 'cassia', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Chen', jsonFile: 'chen', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Cho', jsonFile: 'cho', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Chromie', jsonFile: 'chromie', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Deathwing', jsonFile: 'deathwing', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Deckard', jsonFile: 'deckard', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Dehaka', jsonFile: 'dehaka', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Diablo', jsonFile: 'diablo', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'D.Va', jsonFile: 'dva', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'E.T.C.', jsonFile: 'etc', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Falstad', jsonFile: 'falstad', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Fenix', jsonFile: 'fenix', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Gall', jsonFile: 'gall', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Garrosh', jsonFile: 'garrosh', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Gazlowe', jsonFile: 'gazlowe', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Genji', jsonFile: 'genji', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Greymane', jsonFile: 'greymane', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Gul\'dan', jsonFile: 'guldan', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Hanzo', jsonFile: 'hanzo', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Hogger', jsonFile: 'hogger', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Illidan', jsonFile: 'illidan', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Imperius', jsonFile: 'imperius', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Jaina', jsonFile: 'jaina', portrait: 'https://static.wikia.nocookie.net/allstars_gamepedia/images/d/d2/Jaina_Hero_Portrait.png/revision/latest' },
-    { name: 'Johanna', jsonFile: 'johanna', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Junkrat', jsonFile: 'junkrat', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Kael\'thas', jsonFile: 'kaelthas', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Kel\'Thuzad', jsonFile: 'kelthuzad', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Kerrigan', jsonFile: 'kerrigan', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Kharazim', jsonFile: 'kharazim', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Leoric', jsonFile: 'leoric', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Li Li', jsonFile: 'lili', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Li-Ming', jsonFile: 'liming', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'The Lost Vikings', jsonFile: 'lostvikings', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Lt. Morales', jsonFile: 'morales', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Lúcio', jsonFile: 'lucio', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Lunara', jsonFile: 'lunara', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Maiev', jsonFile: 'maiev', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Malfurion', jsonFile: 'malfurion', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Mal\'Ganis', jsonFile: 'malganis', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Malthael', jsonFile: 'malthael', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Medivh', jsonFile: 'medivh', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Mei', jsonFile: 'mei', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Mephisto', jsonFile: 'mephisto', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Muradin', jsonFile: 'muradin', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Murky', jsonFile: 'murky', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Nazeebo', jsonFile: 'nazeebo', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Nova', jsonFile: 'nova', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Orphea', jsonFile: 'orphea', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Probius', jsonFile: 'probius', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Qhira', jsonFile: 'qhira', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Ragnaros', jsonFile: 'ragnaros', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Raynor', jsonFile: 'raynor', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Rehgar', jsonFile: 'rehgar', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Rexxar', jsonFile: 'rexxar', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Samuro', jsonFile: 'samuro', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Sgt. Hammer', jsonFile: 'sgthammer', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Sonya', jsonFile: 'sonya', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Stitches', jsonFile: 'stitches', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Stukov', jsonFile: 'stukov', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Sylvanas', jsonFile: 'sylvanas', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Tassadar', jsonFile: 'tassadar', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Thrall', jsonFile: 'thrall', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Tracer', jsonFile: 'tracer', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Tychus', jsonFile: 'tychus', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Tyrael', jsonFile: 'tyrael', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Tyrande', jsonFile: 'tyrande', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Uther', jsonFile: 'uther', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Valeera', jsonFile: 'valeera', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Valla', jsonFile: 'valla', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Varian', jsonFile: 'varian', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Whitemane', jsonFile: 'whitemane', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Xul', jsonFile: 'xul', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Yrel', jsonFile: 'yrel', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Zagara', jsonFile: 'zagara', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Zarya', jsonFile: 'zarya', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Zeratul', jsonFile: 'zeratul', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' },
-    { name: 'Zul\'jin', jsonFile: 'zuljin', portrait: '[REPLACE WITH DIRECT URL FROM WIKI]' }
+    { name: 'Abathur', jsonFile: 'abathur', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/abathur_hero_portrait.png' },
+    { name: 'Alarak', jsonFile: 'alarak', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/alarak_hero_portrait.png' },
+    { name: 'Alexstrasza', jsonFile: 'alexstrasza', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/alexstrasza_hero_portrait.png' },
+    { name: 'Ana', jsonFile: 'ana', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/ana_hero_portrait.png' },
+    { name: 'Anduin', jsonFile: 'anduin', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/anduin_hero_portrait.png' },
+    { name: 'Anub\'arak', jsonFile: 'anubarak', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/anubarak_hero_portrait.png' },
+    { name: 'Artanis', jsonFile: 'artanis', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/artanis_hero_portrait.png' },
+    { name: 'Arthas', jsonFile: 'arthas', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/arthas_hero_portrait.png' },
+    { name: 'Auriel', jsonFile: 'auriel', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/auriel_hero_portrait.png' },
+    { name: 'Azmodan', jsonFile: 'azmodan', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/azmodan_hero_portrait.png' },
+    { name: 'Blaze', jsonFile: 'blaze', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/blaze_hero_portrait.png' },
+    { name: 'Brightwing', jsonFile: 'brightwing', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/brightwing_hero_portrait.png' },
+    { name: 'The Butcher', jsonFile: 'butcher', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/butcher_hero_portrait.png' },
+    { name: 'Cassia', jsonFile: 'cassia', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/cassia_hero_portrait.png' },
+    { name: 'Chen', jsonFile: 'chen', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/chen_hero_portrait.png' },
+    { name: 'Cho', jsonFile: 'cho', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/cho_hero_portrait.png' },
+    { name: 'Chromie', jsonFile: 'chromie', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/chromie_hero_portrait.png' },
+    { name: 'Deathwing', jsonFile: 'deathwing', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/deathwing_hero_portrait.png' },
+    { name: 'Deckard', jsonFile: 'deckard', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/deckard_hero_portrait.png' },
+    { name: 'Dehaka', jsonFile: 'dehaka', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/dehaka_hero_portrait.png' },
+    { name: 'Diablo', jsonFile: 'diablo', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/diablo_hero_portrait.png' },
+    { name: 'D.Va', jsonFile: 'dva', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/dva_hero_portrait.png' },
+    { name: 'E.T.C.', jsonFile: 'etc', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/etc_hero_portrait.png' },
+    { name: 'Falstad', jsonFile: 'falstad', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/falstad_hero_portrait.png' },
+    { name: 'Fenix', jsonFile: 'fenix', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/fenix_hero_portrait.png' },
+    { name: 'Gall', jsonFile: 'gall', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/gall_hero_portrait.png' },
+    { name: 'Garrosh', jsonFile: 'garrosh', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/garrosh_hero_portrait.png' },
+    { name: 'Gazlowe', jsonFile: 'gazlowe', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/gazlowe_hero_portrait.png' },
+    { name: 'Genji', jsonFile: 'genji', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/genji_hero_portrait.png' },
+    { name: 'Greymane', jsonFile: 'greymane', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/greymane_hero_portrait.png' },
+    { name: 'Gul\'dan', jsonFile: 'guldan', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/guldan_hero_portrait.png' },
+    { name: 'Hanzo', jsonFile: 'hanzo', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/hanzo_hero_portrait.png' },
+    { name: 'Hogger', jsonFile: 'hogger', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/hogger_hero_portrait.png' },
+    { name: 'Illidan', jsonFile: 'illidan', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/illidan_hero_portrait.png' },
+    { name: 'Imperius', jsonFile: 'imperius', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/imperius_hero_portrait.png' },
+    { name: 'Jaina', jsonFile: 'jaina', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/jaina_hero_portrait.png' },
+    { name: 'Johanna', jsonFile: 'johanna', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/johanna_hero_portrait.png' },
+    { name: 'Junkrat', jsonFile: 'junkrat', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/junkrat_hero_portrait.png' },
+    { name: 'Kael\'thas', jsonFile: 'kaelthas', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/kaelthas_hero_portrait.png' },
+    { name: 'Kel\'Thuzad', jsonFile: 'kelthuzad', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/kelthuzad_hero_portrait.png' },
+    { name: 'Kerrigan', jsonFile: 'kerrigan', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/kerrigan_hero_portrait.png' },
+    { name: 'Kharazim', jsonFile: 'kharazim', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/kharazim_hero_portrait.png' },
+    { name: 'Leoric', jsonFile: 'leoric', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/leoric_hero_portrait.png' },
+    { name: 'Li Li', jsonFile: 'lili', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/lili_hero_portrait.png' },
+    { name: 'Li-Ming', jsonFile: 'liming', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/liming_hero_portrait.png' },
+    { name: 'The Lost Vikings', jsonFile: 'lostvikings', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/lostvikings_hero_portrait.png' },
+    { name: 'Lt. Morales', jsonFile: 'morales', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/morales_hero_portrait.png' },
+    { name: 'Lúcio', jsonFile: 'lucio', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/lucio_hero_portrait.png' },
+    { name: 'Lunara', jsonFile: 'lunara', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/lunara_hero_portrait.png' },
+    { name: 'Maiev', jsonFile: 'maiev', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/maiev_hero_portrait.png' },
+    { name: 'Malfurion', jsonFile: 'malfurion', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/malfurion_hero_portrait.png' },
+    { name: 'Mal\'Ganis', jsonFile: 'malganis', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/malganis_hero_portrait.png' },
+    { name: 'Malthael', jsonFile: 'malthael', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/malthael_hero_portrait.png' },
+    { name: 'Medivh', jsonFile: 'medivh', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/medivh_hero_portrait.png' },
+    { name: 'Mei', jsonFile: 'mei', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/mei_hero_portrait.png' },
+    { name: 'Mephisto', jsonFile: 'mephisto', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/mephisto_hero_portrait.png' },
+    { name: 'Muradin', jsonFile: 'muradin', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/muradin_hero_portrait.png' },
+    { name: 'Murky', jsonFile: 'murky', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/murky_hero_portrait.png' },
+    { name: 'Nazeebo', jsonFile: 'nazeebo', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/nazeebo_hero_portrait.png' },
+    { name: 'Nova', jsonFile: 'nova', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/nova_hero_portrait.png' },
+    { name: 'Orphea', jsonFile: 'orphea', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/orphea_hero_portrait.png' },
+    { name: 'Probius', jsonFile: 'probius', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/probius_hero_portrait.png' },
+    { name: 'Qhira', jsonFile: 'qhira', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/qhira_hero_portrait.png' },
+    { name: 'Ragnaros', jsonFile: 'ragnaros', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/ragnaros_hero_portrait.png' },
+    { name: 'Raynor', jsonFile: 'raynor', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/raynor_hero_portrait.png' },
+    { name: 'Rehgar', jsonFile: 'rehgar', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/rehgar_hero_portrait.png' },
+    { name: 'Rexxar', jsonFile: 'rexxar', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/rexxar_hero_portrait.png' },
+    { name: 'Samuro', jsonFile: 'samuro', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/samuro_hero_portrait.png' },
+    { name: 'Sgt. Hammer', jsonFile: 'sgthammer', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/sgthammer_hero_portrait.png' },
+    { name: 'Sonya', jsonFile: 'sonya', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/sonya_hero_portrait.png' },
+    { name: 'Stitches', jsonFile: 'stitches', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/stitches_hero_portrait.png' },
+    { name: 'Stukov', jsonFile: 'stukov', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/stukov_hero_portrait.png' },
+    { name: 'Sylvanas', jsonFile: 'sylvanas', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/sylvanas_hero_portrait.png' },
+    { name: 'Tassadar', jsonFile: 'tassadar', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/tassadar_hero_portrait.png' },
+    { name: 'Thrall', jsonFile: 'thrall', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/thrall_hero_portrait.png' },
+    { name: 'Tracer', jsonFile: 'tracer', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/tracer_hero_portrait.png' },
+    { name: 'Tychus', jsonFile: 'tychus', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/tychus_hero_portrait.png' },
+    { name: 'Tyrael', jsonFile: 'tyrael', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/tyrael_hero_portrait.png' },
+    { name: 'Tyrande', jsonFile: 'tyrande', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/tyrande_hero_portrait.png' },
+    { name: 'Uther', jsonFile: 'uther', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/uther_hero_portrait.png' },
+    { name: 'Valeera', jsonFile: 'valeera', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/valeera_hero_portrait.png' },
+    { name: 'Valla', jsonFile: 'valla', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/valla_hero_portrait.png' },
+    { name: 'Varian', jsonFile: 'varian', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/varian_hero_portrait.png' },
+    { name: 'Whitemane', jsonFile: 'whitemane', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/whitemane_hero_portrait.png' },
+    { name: 'Xul', jsonFile: 'xul', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/xul_hero_portrait.png' },
+    { name: 'Yrel', jsonFile: 'yrel', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/yrel_hero_portrait.png' },
+    { name: 'Zagara', jsonFile: 'zagara', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/zagara_hero_portrait.png' },
+    { name: 'Zarya', jsonFile: 'zarya', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/zarya_hero_portrait.png' },
+    { name: 'Zeratul', jsonFile: 'zeratul', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/zeratul_hero_portrait.png' },
+    { name: 'Zul\'jin', jsonFile: 'zuljin', portrait: 'https://raw.githubusercontent.com/heroespatchnotes/heroes-talents/master/images/heroportraits/zuljin_hero_portrait.png' }
 ];
 
 // Load heroes into the list
@@ -128,7 +129,7 @@ function drop(ev) {
     ev.target.appendChild(img);
 }
 
-// Show details modal
+// Show details modal (updated to handle object structure for abilities and talents)
 function showDetails(name, jsonFile) {
     const modal = document.getElementById('detailsModal');
     const heroNameEl = document.getElementById('heroName');
@@ -143,13 +144,25 @@ function showDetails(name, jsonFile) {
         .then(response => response.json())
         .then(data => {
             let html = '<div class="ability-section"><h3>Abilities</h3>';
-            data.abilities.forEach(ability => {
-                html += `<p><strong>${ability.name}</strong>: ${ability.description} (Hotkey: ${ability.hotkey || 'N/A'}, Cooldown: ${ability.cooldown || 'N/A'}, Mana: ${ability.manaCost || 'N/A'})</p>`;
+
+            // Abilities are an object with category keys (e.g., 'basic', 'heroic', 'trait')
+            Object.keys(data.abilities).forEach(category => {
+                html += `<h4>${category.charAt(0).toUpperCase() + category.slice(1)}</h4>`;
+                data.abilities[category].forEach(ability => {
+                    html += `<p><strong>${ability.name}</strong>: ${ability.description} (Hotkey: ${ability.hotkey || 'N/A'}, Cooldown: ${ability.cooldown || 'N/A'}, Mana: ${ability.manaCost || 'N/A'})</p>`;
+                });
             });
+
             html += '</div><div class="talent-section"><h3>Talents</h3>';
-            data.talents.forEach(talent => {
-                html += `<p><strong>${talent.name}</strong>: ${talent.description} (Level: ${talent.sort || 'N/A'})</p>`;
+
+            // Talents are an object with level keys (e.g., '1', '4'); sort numerically
+            Object.keys(data.talents).sort((a, b) => Number(a) - Number(b)).forEach(level => {
+                html += `<h4>Level ${level}</h4>`;
+                data.talents[level].forEach(talent => {
+                    html += `<p><strong>${talent.name}</strong>: ${talent.description}</p>`;
+                });
             });
+
             html += '</div>';
             detailsEl.innerHTML = html;
         })
